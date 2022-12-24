@@ -23,5 +23,5 @@ export function EditableSpan(props: EditableSpanPropsType) {
 
     return editMode
         ? <input value={title} onChange={changeTitle} autoFocus onBlur={activateViewMode}/>
-        : <span onDoubleClick={activateEditMode} style={{color:'black'}}>{props.value}</span>
+        : <span onDoubleClick={activateEditMode}>{props.value}</span>
 }
